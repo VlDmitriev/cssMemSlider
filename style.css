@@ -15,22 +15,22 @@ html {
     background-color: #545454;
     max-width: 70rem;
     min-height: 100vh;
-    padding: 20px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .mem-wrapper{
     display: flex;
-    overflow: hidden;
+    width: 400%;
 }
 
 .mem-img {
-    width: 100%;
-    transition: 2s;
+    width: 25%;
+    transition: 1s;
 }
 
 .radio-btn {
-    visibility: hidden;
+    display: none;
 }
 
 .subtitle {
@@ -61,5 +61,20 @@ html {
     background-color: rgb(117, 113, 109);
 }
 
+#radio1:checked ~ .mem-img1 {
+    margin-left: 0;
+}
 
+#radio2:checked ~ .mem-img1 {
+    margin-left: -25%
+}
 
+#radio3:checked ~ .mem-img1 {
+    margin-left: -50%
+}
+
+#radio4:checked ~ .mem-img1 {
+    margin-left: -75%
+}
+
+  
