@@ -16,12 +16,12 @@ html {
     max-width: 70rem;
     min-height: 100vh;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .mem-wrapper{
     display: flex;
     width: 400%;
+    transition: 1s;
 }
 
 .mem-img {
@@ -61,20 +61,36 @@ html {
     background-color: rgb(117, 113, 109);
 }
 
-#radio1:checked ~ .mem-img1 {
+#radio1:checked ~ .mem-wrapper {
     margin-left: 0;
 }
 
-#radio2:checked ~ .mem-img1 {
-    margin-left: -25%
+#radio2:checked ~ .mem-wrapper {
+    margin-left: -100%
 }
 
-#radio3:checked ~ .mem-img1 {
-    margin-left: -50%
+#radio3:checked ~ .mem-wrapper {
+    margin-left: -200%
 }
 
-#radio4:checked ~ .mem-img1 {
-    margin-left: -75%
+#radio4:checked ~ .mem-wrapper {
+    margin-left: -300%
+}
+
+#radio1:checked ~ .subtitle #btn1 {
+    background-color: #292626;
+}
+
+#radio2:checked ~ .subtitle #btn2 {
+    background-color: #292626;
+}
+
+#radio3:checked ~ .subtitle #btn3 {
+    background-color: #292626;
+}
+
+#radio4:checked ~ .subtitle #btn4 {
+    background-color: #292626;
 }
 
   
