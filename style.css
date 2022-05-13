@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+.body {
+    background-color: #545454;
+}
+
+.container {
+    background-color: #545454;
+    max-width: 70rem;
+    min-height: 100vh;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.mem-wrapper{
+    display: flex;
+    overflow: hidden;
+}
+
+.mem-img {
+    width: 100%;
+    transition: 2s;
+}
+
+.radio-btn {
+    visibility: hidden;
+}
+
+.subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.text {
+    font-size: 2rem;
+}
+
+.control {
+    display: flex;
+    gap: 5px;
+}
+
+.btn {
+    width: 4rem;
+    height: 0.7rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(117, 113, 109);
+}
+
+
+
