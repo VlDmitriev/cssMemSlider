@@ -16,7 +16,6 @@ html {
     background-color: #252525;
     padding-top: 3rem;
     max-width: 70rem;
-    min-height: 100vh;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -41,6 +40,7 @@ html {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    margin-top: 1rem;
 }
 
 .text-carousel {
@@ -55,7 +55,7 @@ html {
 }
 
 .text {
-    width: 100%;
+    width: 25%;
     font-size: 2.2rem;
     color: #fff;
 }
@@ -75,6 +75,20 @@ html {
     border-radius: 1rem;
     background-color: #fff;
     cursor: pointer;
+    transition: .2s;
+}
+
+@media (max-width: 768px) {
+    .subtitle {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .text-carousel {
+        width: 100%;
+    }
+    .text {
+        text-align: center;
+    }
 }
 
 .btn:hover {
@@ -83,6 +97,10 @@ html {
 
 .btn-wrapper:hover .btn {
     background-color: #6c6868;
+}
+
+.btn-wrapper:active .btn {
+    background-color: #28a2ee;
 }
 
 #radio1:checked ~ .mem-wrapper, #radio1:checked ~ .subtitle .text-container {
