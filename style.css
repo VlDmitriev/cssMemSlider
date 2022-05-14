@@ -8,11 +8,12 @@ html {
 }
 
 .body {
-    background-color: #545454;
+    background-color: #252525;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
-    background-color: #545454;
+    background-color: #252525;
     padding-top: 3rem;
     max-width: 70rem;
     min-height: 100vh;
@@ -23,12 +24,12 @@ html {
 .mem-wrapper{
     display: flex;
     width: 400%;
-    transition: 1s;
+    transition: .5s;
 }
 
 .mem-img {
     width: 25%;
-    transition: 1s;
+    transition: .5s;
 }
 
 .radio-btn {
@@ -39,32 +40,37 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .text-carousel {
-    max-width: 45rem;
+    max-width: 48rem;
     overflow: hidden;
 }
 
 .text-container {
     display: flex;
     width: 400%;
-    transition: 1s;
+    transition: .5s;
 }
 
 .text {
     width: 100%;
     font-size: 2.2rem;
+    color: #fff;
 }
 
 .control {
     display: flex;
-    gap: 0.5rem;
+}
+
+.btn-wrapper {
+    padding: 1rem;
+    cursor: pointer;
 }
 
 .btn {
-    width: 4rem;
+    width: 3rem;
     height: 0.7rem;
     border-radius: 1rem;
     background-color: #fff;
@@ -72,7 +78,11 @@ html {
 }
 
 .btn:hover {
-    background-color: rgb(117, 113, 109);
+    background-color: #6c6868;
+}
+
+.btn-wrapper:hover .btn {
+    background-color: #6c6868;
 }
 
 #radio1:checked ~ .mem-wrapper, #radio1:checked ~ .subtitle .text-container {
@@ -92,19 +102,19 @@ html {
 }
 
 #radio1:checked ~ .subtitle #btn1 {
-    background-color: #292626;
+    background-color: #6c6868;
 }
 
 #radio2:checked ~ .subtitle #btn2 {
-    background-color: #292626;
+    background-color: #6c6868;
 }
 
 #radio3:checked ~ .subtitle #btn3 {
-    background-color: #292626;
+    background-color: #6c6868;
 }
 
 #radio4:checked ~ .subtitle #btn4 {
-    background-color: #292626;
+    background-color: #6c6868;
 }
 
   
