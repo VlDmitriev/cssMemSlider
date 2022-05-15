@@ -104,19 +104,19 @@ html {
 }
 
 #radio1:checked ~ .mem-wrapper, #radio1:checked ~ .subtitle .text-container {
-    margin-left: 0;
+    transform: translateX(0%);
 }
 
 #radio2:checked ~ .mem-wrapper, #radio2:checked ~ .subtitle .text-container {
-    margin-left: -100%
+    transform: translateX(-25%);
 }
 
 #radio3:checked ~ .mem-wrapper, #radio3:checked ~ .subtitle .text-container {
-    margin-left: -200%
+    transform: translateX(-50%);
 }
 
 #radio4:checked ~ .mem-wrapper, #radio4:checked ~ .subtitle .text-container {
-    margin-left: -300%
+    transform: translateX(-75%);
 }
 
 #radio1:checked ~ .subtitle #btn1 {
