@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+.body {
+    background-color: #252525;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: #252525;
+    padding-top: 3rem;
+    max-width: 70rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.mem-wrapper{
+    display: flex;
+    width: 400%;
+    transition: .5s;
+}
+
+.mem-img {
+    width: 25%;
+    transition: .5s;
+}
+
+.radio-btn {
+    display: none;
+}
+
+.subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.text-carousel {
+    max-width: 48rem;
+    overflow: hidden;
+}
+
+.text-container {
+    display: flex;
+    width: 400%;
+    transition: .5s;
+}
+
+.text {
+    width: 25%;
+    font-size: 2.2rem;
+    color: #fff;
+}
+
+.control {
+    display: flex;
+}
+
+.btn-wrapper {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.btn {
+    width: 3rem;
+    height: 0.7rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+@media (max-width: 768px) {
+    .subtitle {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .text-carousel {
+        width: 100%;
+    }
+    .text {
+        text-align: center;
+    }
+}
+
+.btn:hover {
+    background-color: #6c6868;
+}
+
+.btn-wrapper:hover .btn {
+    background-color: #6c6868;
+}
+
+.btn-wrapper:active .btn {
+    background-color: #28a2ee;
+}
+
+#radio1:checked ~ .mem-wrapper, #radio1:checked ~ .subtitle .text-container {
+    transform: translateX(0%);
+}
+
+#radio2:checked ~ .mem-wrapper, #radio2:checked ~ .subtitle .text-container {
+    transform: translateX(-25%);
+}
+
+#radio3:checked ~ .mem-wrapper, #radio3:checked ~ .subtitle .text-container {
+    transform: translateX(-50%);
+}
+
+#radio4:checked ~ .mem-wrapper, #radio4:checked ~ .subtitle .text-container {
+    transform: translateX(-75%);
+}
+
+#radio1:checked ~ .subtitle #btn1 {
+    background-color: #6c6868;
+}
+
+#radio2:checked ~ .subtitle #btn2 {
+    background-color: #6c6868;
+}
+
+#radio3:checked ~ .subtitle #btn3 {
+    background-color: #6c6868;
+}
+
+#radio4:checked ~ .subtitle #btn4 {
+    background-color: #6c6868;
+}
+
+  
